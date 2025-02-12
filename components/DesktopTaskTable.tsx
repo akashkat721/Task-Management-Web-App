@@ -289,7 +289,7 @@ const TaskTable: React.FC = () => {
         <th className="border border-gray-300 text-center p-2">Due Date</th>
         <th className="border border-gray-300 text-center p-2">Status</th>
         <th className="border border-gray-300 text-center p-2">Priority</th>
-        <th className="border border-gray-300 text-center p-2">Actions</th>
+       
       </tr>
     </thead>
     <tbody>
