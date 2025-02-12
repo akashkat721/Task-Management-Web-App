@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "name": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "dueDate": "12-09-2024",
+      "priority": "Medium",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "name": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "dueDate": "15-09-2027",
+      "priority": "High",
+      "status": "In Progress"
+    },
+    {
+      "id": 3,
+      "name": "Lorem ipsum dolor sit amet",
+      "description": "Perform a thorough review of the recent code submissions and test for bugs or potential issues in the new feature implementations.",
+      "dueDate": "17-09-2024",
+      "priority": "Medium",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "name": "Lorem ipsum dolor sit amet",
+      "description": "Prepare slides and talking points for the client presentation. Focus on project milestones and upcoming deliverables.",
+      "dueDate": "18-09-2024",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": 5,
+      "name": "Lorem ipsum dolor sit",
+      "description": "Optimize the database queries and structure to improve performance, particularly on the reports generation page.",
+      "dueDate": "20-09-2024",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": 6,
+      "name": "Lorem ipsum dolor sit",
+      "description": "Conduct a feedback session with the design team to gather insights on the latest UI/UX updates and user interactions.",
+      "dueDate": "25-09-2024",
+      "priority": "High",
+      "status": "Completed"
+    },
+    {
+      "id": 7,
+      "name": "Lorem ipsum dolor sit amet",
+      "description": "Integrate the payment gateway API with the application and ensure all transactions are processed securely and efficiently.",
+      "dueDate": "27-09-2024",
+      "priority": "High",
+      "status": "In Progress"
+    }
+  ]

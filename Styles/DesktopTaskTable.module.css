@@ -1,0 +1,79 @@
+.taskTablecontainer {
+    top: 174px;
+    left: 32px;
+    width: 1302px;
+    height: 559px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #941B0F;
+    border-radius: 10px;
+    opacity: 1;
+}
+.my-h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: Arial, sans-serif; /* Added for uniformity */
+}
+.taskTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 174px;
+}
+.taskTable th {
+    top: 191px;
+    left: 859px;
+    width: 58px;
+    height: 17px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 14px/18px Proxima Nova;
+    letter-spacing: 0px;
+    color: #941B0F;
+    opacity: 1;
+    
+}
+.taskTable td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif; /* Added for uniformity */
+    top: 191px;
+}
+.taskTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+  
+  /* Button Styles */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-sort {
+    background-color: #ddd;
+    color: #333;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-filter {
+    background-color: #ddd;
+    color: #333
+}

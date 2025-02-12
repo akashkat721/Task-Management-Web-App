@@ -1,0 +1,83 @@
+import React, { createContext, useContext, useState, useEffect } from 'react';
+
+export interface ITask {
+    id: number;
+    name: string;
+    description: string;
+    dueDate: string;
+    priority: 'High' | 'Medium' | 'Low';
+    status: statusEnum;
+}
+
+export enum statusEnum {
+    IN_PROGRESS = 'In Progress',
+    COMPLETED = 'Completed',
+    PENDING = 'Pending',
+}
+
+interface TaskContextType {
+    tasks: ITask[];
+    addTask: (task: ITask) => void;
+    updateTask: (task: ITask) => void;
+    deleteTask: (id: number) => void;
+}
+
+const TaskContext = createContext<TaskContextType | undefined>(undefined);
+
+export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+    const [tasks, setTasks] = useState<ITask[]>(() => {
+        if (typeof window !== "undefined") {
+            const savedTasks = localStorage.getItem("tasks");
+            return savedTasks ? JSON.parse(savedTasks) : [];
+        }
+        return [];
+    });
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            localStorage.setItem("tasks", JSON.stringify(tasks));
+        }
+    }, [tasks]);
+
+    const addTask = (task: ITask) => setTasks([...tasks, task]);
+    
+    const updateTask = (updatedTask: ITask) => {
+      
+        setTasks(prevTasks => {
+            const newTasks = prevTasks.map(task =>
+                task.id === updatedTask.id ? { ...task, ...updatedTask } : task
+            );
+            console.log("Updated Tasks List:", newTasks);
+
+            localStorage.setItem("tasks", JSON.stringify(newTasks));
+            return newTasks;
+        });
+    };
+    
+    const deleteTask = (id: number) => {
+        setTasks(prevTasks => {
+            const updatedTasks = prevTasks.filter(task => task.id !== id);
+            localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+            return updatedTasks;
+        });
+    };
+    
+    const clearTasks = () => {
+        setTasks([]);
+        localStorage.removeItem("tasks");
+    };
+    
+    return (
+        <TaskContext.Provider value={{ tasks, addTask, updateTask, deleteTask }}>
+            {children}
+        </TaskContext.Provider>
+    );
+};
+
+export const useTaskContext = () => {
+    const context = useContext(TaskContext);
+    if (!context) {
+        throw new Error('useTaskContext must be used within a TaskProvider');
+    }
+    return context;
+};
