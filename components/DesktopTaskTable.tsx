@@ -209,7 +209,7 @@ const TaskTable: React.FC = () => {
     <div className="flex flex-col items-center my-12 px-4">
      
       <div className="flex justify-between w-full mb-8">
-      <div className="w-full"><Image src="/screenshot.png" alt="Studio 137 Logo" width={250} height={100} />
+      <div className="w-full"><Image src="/Screenshot.png" alt="Studio 137 Logo" width={250} height={100} />
         <h1 className="text-2xl font-bold clear-both text-centre mt-2 ml-8 max-w-[300px] w-full">Tasks</h1></div>
         <div className="relative w-full max-w-[200px] mt-5 hidden sm:block">
   <FaSearch className="absolute left-3 top-2 text-gray-400" />
@@ -349,7 +349,7 @@ const TaskTable: React.FC = () => {
         <p className="text-red-600"><strong>Description:</strong> <span className="text-black">{task.description}</span></p>
         <p className="text-red-600"><strong>Due Date:</strong> <span className="text-black">{task.dueDate}</span></p>
         <p className="text-red-600"><strong>Status:</strong> 
-          <span className={`px-3 py-1 rounded-full text-white ml-2 ${task.status === 'Completed' ? 'bg-green-500' : 'bg-yellow-500'}`}>
+          <span className={`px-2 py-1 rounded-full text-white ml-2 ${task.status === 'Completed' ? 'bg-green-500' : 'bg-yellow-500'}`}>
             {task.status}
           </span>
         </p>
