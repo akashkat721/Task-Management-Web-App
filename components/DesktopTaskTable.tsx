@@ -302,7 +302,7 @@ const TaskTable: React.FC = () => {
         <td className="border border-gray-300 text-center p-2">{task.dueDate}</td>
         <td className="border border-gray-300 text-center p-2">
           <span
-            className={`px-3 py-1 rounded-full text-white ${
+            className={`px-2 py-1 rounded-full text-white ${
               task.status === 'Completed' ? 'bg-green-500' : 'bg-yellow-500'
             }`}
           >
