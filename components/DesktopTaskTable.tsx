@@ -203,7 +203,7 @@ const TaskTable: React.FC = () => {
   
 
   return (
-    <div>
+    <div className="bg-white text-black min-h-screen>
       
    
     <div className="flex flex-col items-center my-12 px-4">
