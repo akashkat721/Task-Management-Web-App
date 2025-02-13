@@ -1,4 +1,7 @@
-.taskTablecontainer {
+body {
+    background-color: white;
+  }
+  .taskTablecontainer {
     top: 174px;
     left: 32px;
     width: 1302px;
