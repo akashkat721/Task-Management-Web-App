@@ -300,15 +300,15 @@ const TaskTable: React.FC = () => {
         <td className="border border-light-red text-center p-2">{task.name}</td>
         <td className="border border-gray-300 text-center p-2">{task.description}</td>
         <td className="border border-gray-300 text-center p-2">{task.dueDate}</td>
-        <td className="border border-gray-300 text-center p-2">
-          <span
-            className={`px-2 py-1 rounded-full text-white ${
-              task.status === 'Completed' ? 'bg-green-500' : 'bg-yellow-500'
-            }`}
-          >
-            {task.status}
-          </span>
-        </td>
+       <td className="border border-gray-300 text-center p-2">
+  <span
+    className={`px-2 py-1 rounded-full text-white ${
+      task.status === "Completed" ? "bg-green-500" : "bg-yellow-500"
+    }`}
+  >
+    {task.status}
+  </span>
+</td>
         <td className="border border-gray-300 text-center p-2">
           <select
             value={task.priority}
