@@ -380,6 +380,10 @@ const TaskTable: React.FC = () => {
   
 
       <style jsx>{`
+      body {
+    background-color: white;
+  }
+  
         .status {
           display: inline-block;
           padding: 0.5em 1em;
